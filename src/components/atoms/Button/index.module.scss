@@ -1,0 +1,33 @@
+@import "/src/styles/tokens.scss";
+
+button {
+  width: 100%;
+  color: $greyScale0;
+  text-align: center;  
+  font-size: 1rem;
+  height: 3rem;
+  text-decoration: none;
+  border-radius: 0.3rem;
+  border:none;
+  cursor: pointer;
+  color: $greyScale0;
+  background-color: $green400;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.5rem;
+  letter-spacing: -0.005em;
+  &:hover {
+    background-color: $green600;
+  }
+
+}
+
+.Favorited {
+  @extend button;
+  background-color: $green100;
+  color: $greyScale900;
+  &:hover {
+    background-color: $green100;
+    color: $greyScale900;
+  }
+}

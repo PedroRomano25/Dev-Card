@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "./tokens.scss";
+
+html,
+body {
+  padding: 1rem;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: $backgroudColor;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
