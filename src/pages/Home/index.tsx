@@ -1,6 +1,7 @@
 import { useMemo, useState } from "react";
 import Home from "../../components/templates/Home";
 import { listProducts } from "../../items/listProducts";
+import styles from './index.module.scss';
 
 function HomePage() {
   const [data,setData] = useState<IProduct[]>(listProducts)
@@ -21,7 +22,7 @@ function HomePage() {
   }
 
   return (
-    <div className="App">
+    <div className={styles.App}>
       <Home
        onClickButton={addItemList}
        onClickWishList={saveWishList}
